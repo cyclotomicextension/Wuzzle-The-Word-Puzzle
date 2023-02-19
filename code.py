@@ -8,7 +8,7 @@ data=pd.read_csv("https://copylists.com/downloads/words/5_letter_words/5_letter_
 word_list=np.array(data[1])
 t=random.randint(1,490)
 for k in range(5):
-  input_word = input(Fore.WHITE + "Enter your 5 letter word.")
+  input_word = input(Fore.WHITE + "Enter your 5 letter word: ")
   d = enchant.Dict("en_US")
   len_inword = len(input_word)
   if len_inword != 5 or not d.check(input_word):
